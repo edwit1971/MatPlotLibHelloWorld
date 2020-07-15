@@ -105,10 +105,10 @@ android.arch = armeabi-v7a
 ############################################################
 
 # (str) python-for-android fork to use, defaults to upstream (kivy)
-p4a.fork = edwit1971
+#p4a.fork = edwit1971
 
 # (str) python-for-android branch to use, defaults to master
-p4a.branch = develop
+#p4a.branch = develop
 
 
 ############################################################
