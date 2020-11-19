@@ -35,21 +35,29 @@ version = 1.0
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3==3.7.6, hostpython3==3.7.6, sqlite3, android, kivy==1.11.1, git+https://github.com/HeaTTheatR/KivyMD.git, pygments, matplotlib
-
-# (str) Custom source folders for requirements
-# Sets custom source for any requirements with recipes
-#requirements.source.kivymd = ../../kivymd
-requirements.source.kivymd = /home/edwit3/anaconda3/envs/myenv/lib/python3.7/site-packages/kivymd
-
-# (list) Garden requirements
-#garden_requirements = matplotlib
-
-# (str) Presplash of the application
-#presplash.filename = %(source.dir)s/images/presplash.png
-
-# (str) Icon of the application
-#icon.filename = %(source.dir)s/images/icon.png
+requirements = hostpython3==3.8.6,
+               python3==3.8.6,
+               sdl2_ttf==2.0.15,
+               kivy==2.0.0rc4,
+               kivymd==0.104.1,
+               sqlite3==3.33.0,
+               pygments==2.7.2,
+               requests==2.25.0,
+               pydrive2==1.6.3,
+               google-api-python-client==1.12.5,
+               google-api-core==1.22.2,
+               google-auth==1.23.0,
+               google-auth-httplib2==0.0.4,
+               googleapis-common-protos==1.52.0,
+               httplib2==0.18.1,
+               oauth2client==4.1.3,
+               urllib3==1.26.2,
+               uritemplate==3.0.1,
+               pyasn1==0.4.8,
+               pyasn1-modules==0.2.8,
+               rsa==4.6,
+               pyyaml==5.3.1,
+               matplotlib==3.1.2
 
 # (str) Supported orientation (one of landscape, sensorLandscape, portrait or all)
 orientation = all
@@ -67,7 +75,7 @@ orientation = all
 osx.python_version = 3
 
 # Kivy version to use
-osx.kivy_version = 1.9.1
+osx.kivy_version = 2.0.0
 
 
 ############################################################
@@ -80,7 +88,7 @@ osx.kivy_version = 1.9.1
 fullscreen = True
 
 # (list) Permissions
-android.permissions = WRITE_EXTERNAL_STORAGE
+android.permissions = WRITE_EXTERNAL_STORAGE, READ_EXTERNAL_STORAGE, INTERNET
 
 # (int) Target Android API, should be as high as possible.
 android.api = 29
@@ -96,19 +104,6 @@ android.logcat_filters = *:S python:D
 
 # (str) The Android arch to build for, choices: armeabi-v7a, arm64-v8a, x86, x86_64
 android.arch = armeabi-v7a
-
-
-############################################################
-#
-# Python for android (p4a) specific
-#
-############################################################
-
-# (str) python-for-android fork to use, defaults to upstream (kivy)
-#p4a.fork = edwit1971
-
-# (str) python-for-android branch to use, defaults to master
-#p4a.branch = develop
 
 
 ############################################################
